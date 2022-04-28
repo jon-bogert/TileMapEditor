@@ -1,6 +1,7 @@
 #pragma once
 #include "Pch.h"
 #include "SpriteSheet.h"
+#include "Canvas.h"
 
 class Application
 {
@@ -20,7 +21,7 @@ private:
 	float deltaTime{};
 
 	SpriteSheet* texture;
-	std::vector<sf::Sprite*> sprites;
+	Canvas* canvas;
 
 public:
 	Application();

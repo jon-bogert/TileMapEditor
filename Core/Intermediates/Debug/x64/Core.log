@@ -1,7 +1,18 @@
-﻿  Application.cpp
-D:\repos\C++\TileMapEditor\Core\Source\Application.cpp(65,30): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+﻿  Canvas.cpp
+D:\repos\C++\TileMapEditor\Core\Source\Canvas.cpp(43,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\repos\C++\TileMapEditor\Core\Source\Canvas.cpp(43,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\repos\C++\TileMapEditor\Core\Source\TileMap.h(381,10): warning C4553: '==': result of expression not used; did you intend '='?
+D:\repos\C++\TileMapEditor\Core\Source\TileMap.h(376): message : while compiling class template member function 'void exo::TileMap<int>::Next(exo::Tile<Type> *&,exo::Tile<Type> *&)'
           with
           [
-              T=int
+              Type=int
           ]
+D:\repos\C++\TileMapEditor\Core\Source\TileMap.h(146): message : see reference to function template instantiation 'void exo::TileMap<int>::Next(exo::Tile<Type> *&,exo::Tile<Type> *&)' being compiled
+          with
+          [
+              Type=int
+          ]
+D:\repos\C++\TileMapEditor\Core\Source\TileMap.h(116): message : while compiling class template member function 'exo::TileMap<int>::TileMap(std::string)'
+D:\repos\C++\TileMapEditor\Core\Source\Canvas.cpp(12): message : see reference to function template instantiation 'exo::TileMap<int>::TileMap(std::string)' being compiled
+D:\repos\C++\TileMapEditor\Core\Source\Canvas.cpp(12): message : see reference to class template instantiation 'exo::TileMap<int>' being compiled
   Core.vcxproj -> D:\repos\C++\TileMapEditor\Build\Debug\x64\Core.exe

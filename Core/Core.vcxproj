@@ -159,6 +159,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Canvas.cpp" />
     <ClCompile Include="Source\Application.cpp" />
     <ClCompile Include="Source\CoreBuilder.cpp" />
     <ClCompile Include="Source\Pch.cpp">
@@ -170,6 +171,7 @@
     <ClCompile Include="Source\SpriteSheet.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Canvas.h" />
     <ClInclude Include="Source\Application.h" />
     <ClInclude Include="Source\Pch.h" />
     <ClInclude Include="Source\TileMap.h" />

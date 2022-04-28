@@ -33,6 +33,9 @@
     <ClCompile Include="Source\SpriteSheet.cpp">
       <Filter>Source\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Canvas.cpp">
+      <Filter>Source\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Pch.h">
@@ -45,6 +48,9 @@
       <Filter>Source\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\SpriteSheet.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Canvas.h">
       <Filter>Source\Header Files</Filter>
     </ClInclude>
   </ItemGroup>

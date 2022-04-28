@@ -4,7 +4,8 @@
 Application::Application()
 	:
 	clock(new sf::Clock()),
-	texture(new SpriteSheet)
+	texture(new SpriteSheet),
+	canvas(new Canvas("map.tilemap"))
 {
 	window = new sf::RenderWindow(sf::VideoMode(resolution.x, resolution.y), title);
 }
@@ -12,9 +13,9 @@ Application::Application()
 Application::~Application()
 {
 	//Members
-	for (sf::Sprite* sprite : sprites)
+	if (canvas != nullptr)
 	{
-		delete sprite;
+		delete canvas;
 	}
 	delete texture;
 	delete clock;
@@ -24,12 +25,8 @@ Application::~Application()
 void Application::Start()
 {
 	texture->LoadDebugTexture();
-	for (int i = 0; i < 128; i++)
-	{
-		sf::Sprite* newSprite = new sf::Sprite;
-		texture->SetupSprite(newSprite, i);
-		sprites.push_back(newSprite);
-	}
+	canvas = new Canvas("map.tilemap");
+	canvas->SetupSprites(texture);
 }
 
 void Application::GameLoop()
@@ -59,13 +56,7 @@ void Application::GameLoop()
 
 void Application::Update()
 {
-	int index{};
-	for (sf::Sprite* sprite : sprites)
-	{
-		sprite->setPosition( index * sprite->getTextureRect().width , 0);
-		window->draw(*sprite);
-		index++;
-	}
+	canvas->Draw(window);
 }
 
 sf::Vector2<int> Application::GetResolution() const
