@@ -1,0 +1,7 @@
+﻿  Application.cpp
+D:\repos\C++\TileMapEditor\Core\Source\Application.cpp(65,30): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=int
+          ]
+  Core.vcxproj -> D:\repos\C++\TileMapEditor\Build\Debug\x64\Core.exe
